@@ -16,6 +16,7 @@
 	<h3>Add note</h3>
 	<form  method="post" action="/cards/{{$card->id}}/notes">
 		<div class="form-group">
+			<input type="hidden" name="_token" value="{!! csrf_token() !!}">
 			<textarea name="body" class="form-control"></textarea>  
 		</div>
 		<div class="form-group">
