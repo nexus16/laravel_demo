@@ -15,4 +15,12 @@ class Card extends Model
     public function path(){
     	return '/cards/'.$this->id;
     }
+
+
+    public function addNote(Note $note, $userID)
+    {
+        $note->user_id = $userID;
+        return  $this->notes()->save($note);
+    }
+
 }

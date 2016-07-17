@@ -16,8 +16,10 @@ class NotesController extends Controller
     {
 
     	$note = new Note;
-    	$note->body = $request->body;      
-    	$card->notes()->save($note);
+    	$note->body = $request->body;   
+        
+    	$card->addNote($note,1);
+
     	
     	return back();
     	
