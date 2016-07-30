@@ -12,6 +12,14 @@
     		width: 80%;
     		margin:auto;
     	}
+
+		.alert-Ok{
+            background-color:darkgreen;
+        }
+        .alert-Error{
+            background-color: darkred;
+        }
+
     </style>
 </head>
 <body>
